@@ -19,11 +19,13 @@ public class Day12024 {
             list1.add(Integer.parseInt(values[0]));
             list2.add(Integer.parseInt(values[1]));
         }
-        part1(list1, list2);
+
+        getDistances(list1, list2);
+        getFamiliarityScore(list1, list2);
     }
 
-    public static void part1(final ArrayList<Integer> list1,
-                             final ArrayList<Integer> list2) throws IOException {
+    public static void getDistances(final ArrayList<Integer> list1,
+                                    final ArrayList<Integer> list2) {
         int ans = 0;
         Collections.sort(list1);
         Collections.sort(list2);
@@ -34,8 +36,8 @@ public class Day12024 {
         System.out.println(ans);
     }
 
-    public static void part2(final ArrayList<Integer> list1,
-                             final ArrayList<Integer> list2) {
+    public static void getFamiliarityScore(final ArrayList<Integer> list1,
+                                           final ArrayList<Integer> list2) {
         int ans = 0;
         for (final Integer integer : list1) {
             int count = 0;
