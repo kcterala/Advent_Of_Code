@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-public class Day12024 {
+public class Day1 {
     public static void main(String[] args) throws IOException, InterruptedException {
         final List<String> lines = AocUtils.getPuzzleInput(2024, 1);
         final ArrayList<Integer> list1 = new ArrayList<>();
